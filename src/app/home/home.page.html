@@ -1,12 +1,20 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
+  <ion-toolbar color="primary">
+    <ion-title >
       Ionic Blank
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  Hola mundo
   <p>If you get lost, the <a target="_blank" rel="noopener" href="https://beta.ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+  <ion-button color="primary" (click)="click()">Click</ion-button>
+  <ion-button color="secundario" routerLink="/perfil">Perfil</ion-button>
+  <ion-button (click)="goUrl()">Click 2</ion-button>
+
+  <h3 *ngFor="let pokemon of pokemons">
+    {{pokemon.name}}
+  </h3>
 </ion-content>
